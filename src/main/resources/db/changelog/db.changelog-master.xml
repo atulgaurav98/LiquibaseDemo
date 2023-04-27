@@ -4,7 +4,9 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-    <include file="db/changelog/01_create_table_student.sql"/>
-    <include file="db/changelog/02_insert_students.sql"/>
-
+   <include file="db/changelog/01_create_accounts_table.sql"/>
+   <include file="db/changelog/02_insert_records_customer.sql"/>
+   <include file="db/changelog/03_create_car_table.sql"/>
+   <include file="db/changelog/04_alter_accounts_table_drop_column_lastlogin.sql"/>
+   <include file="db/changelog/05_create_car_view.sql"/>
 </databaseChangeLog>
